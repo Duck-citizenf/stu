@@ -40,7 +40,7 @@ header {
 .inputs_boxes {
     display: flex;
     flex-direction: column;
-    width: 160px;
+    width: 180px;
     margin:0px;
     order: 0;
 }
