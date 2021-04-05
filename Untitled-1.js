@@ -41238,6 +41238,10 @@ window.weapon = [
     "Buffable": false,
     "Resinable": false,
     "RoB": 50,
-    "Flynn": 50
+    "Flynn": 50,
+    "SorceryRing": 0,
+    "FireRing": 0,
+    "LightningRing": 0,
+    "DarkRing": 0
   }
  ];
