@@ -32383,5 +32383,27 @@ window.weapon = [
     "ReqFai": 0,
     "Buffable": true,
     "Resinable": true
+  },
+  {
+    "Name": "Vanquisher's Seal",
+    "Type": "Fist",
+    "Infusion": "Normal",
+    "BasePhys": 200,
+    "BaseMag": 0,
+    "BaseFre": 0,
+    "BaseLgt": 0,
+    "BaseDrk": 0,
+    "ScalingStr": 75,
+    "ScalingDex": 25,
+    "ScalingMag": 0,
+    "ScalingFre": 0,
+    "ScalingLgt": 0,
+    "ScalingDrk": 0,
+    "ReqStr": 0,
+    "ReqDex": 0,
+    "ReqInt": 0,
+    "ReqFai": 0,
+    "Buffable": false,
+    "Resinable": false
   }
  ];
