@@ -182,7 +182,7 @@ function generateTable(sortKey) {
 		if (weapon["ReqFai"]>bfaith.value){redf = "name_warning";}
 		if (weapon["ReqInt"]>dint.value){redi = "name_warning";}
 		if (weapon["ReqStr"]>bstr.value || weapon["ReqDex"]>dstr.value || weapon["ReqFai"]>bfaith.value || weapon["ReqStr"]>bstr.value){red = "name_warning"}
-		let whole_text = "<tr>"+"<td class ="+red+">"+weapon["Name"]+"</td>"+"<td>"+weapon["Infusion"]+"</td>"+"<td>"
+		let whole_text = "<tr class="table-dark">"+"<td class ="+red+">"+weapon["Name"]+"</td>"+"<td>"+weapon["Infusion"]+"</td>"+"<td>"
 			+weapon.Physical+"</td>"+"<td>"
 			+weapon.Magic+"</td>"+"<td>"
 			+weapon.Fire+"</td>"+"<td>"
