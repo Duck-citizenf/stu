@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="StyleSheet1.css" rel="stylesheet">
+    <title></title>
+</head>
+<header>
+    Dark Souls II Weapons attack calculator
+</header>
+<body>
+    <table class="upper_container">
+        <thread>
+            <tr class="upper_margins">
+                <th class="b"><input class="ladle" type="checkbox"></th><th class="d">Handmaid's Ladle</th> 
+                <th class="b"><input class="dexterity" type="checkbox"></th><th class="d">Ring of Dexterity</th>
+                <th class="b"><input class="sunken" type="checkbox"></th><th class="d">Crown of the Sunken King</th>
+                <th class="b"><input class="attire" type="checkbox"></th><th class="d">Peasant Attire</th>
+            </tr>
+            <tr class="upper_margins">
+                <th class="b"><input class="vessel" type="checkbox"></th><th class="d">Vessel Shield</th> 
+                <th class="b"><input class="strength" type="checkbox"></th><th class="d">Ring of Strength</th>
+                <th class="b"><input class="cales" type="checkbox"></th><th class="d">Cale's Helmet</th>
+                <th class="b"><input class="trousers" type="checkbox"></th><th class="d">Peasant Trousers</th>
+            </tr>
+            <tr class="upper_margins">
+                <th class="b"><input class="hook" type="checkbox"></th><th class="d">Work Hook</th> 
+                <th class="b"><input class="knowledge" type="checkbox"></th><th class="d">Ring of Knowledge</th>
+                <th class="b"><input class="fai1" type="checkbox"></th><th class="d">White Priest Headpiece <br> Priestess Headpiece <br> Looking Glass Mask</th>
+                <th class="b"><input class="gloves" type="checkbox"></th><th class="d">Peasant Long Gloves</th>
+            </tr>
+            <tr class="upper_margins">
+                <th class="a" colspan="2"></th> 
+                <th class="b"><input class="prayer" type="checkbox"></th><th class="d">Ring of Prayer</th>
+                <th class="b"><input class="hat" type="checkbox"></th><th class="d">Peasant Hat</th>
+                <th class="b"><input class="cuffs" type="checkbox"></th><th class="d">Agdayne's Cuffs</th>
+            </tr>
+            <tr class="upper_margins">
+                <th class="a" colspan="4"></th>
+                <th class="b"><input class="insolent" type="checkbox"></th><th class="d">Insolent Helm</th>
+            </tr>
+            <tr class="upper_margins">
+                <th class="a"colspan="4"></th>
+                <th class="b"><input class="int1" type="checkbox"></th><th class="d">White Hollow Mage Hood <br> Black Hollow Mage Hood <br> Archdrake Helm</th>
+            </tr>
+            <tr class="upper_margins">
+                <th class="a" colspan="4"></th>
+                <th class="b"><input class="int2" type="checkbox"></th><th class="d">Warlock Mask <br> Moon Hat</th>
+            </tr>
+            <tr class="upper_margins">
+                <th class="a" colspan="4"></th>
+                <th class="b"><input class="int1fai1" type="checkbox"></th><th class="d">Dragon Sage Hood <br> Dark Mask <br> Levdia Black Hood</th>
+            </tr>
+            <tr class="upper_margins">
+                <th class="a" colspan="4"></th>
+                <th class="b"><input class="king" type="checkbox"></th><th class="d">King's Crown</th>
+            </tr>
+        </thread>
+    </table>
+    <div class="big_container">
+        <div class="inputs_boxes all">
+                <div>Strength <input type="number" value="6" class="str" min="1" max="99"></div>
+                <div>Dexterity <input type="number" value="6" class="dex" min="1" max="99"></div>
+                <div>Intelligence <input type="number" value="6" class="int"  min="1" max="99"></div>
+                <div>Faith <input type="number" value="6" class="faith" min="1" max="99"> </div>
+                <div><input type="checkbox" class="effective"> Effective only</div>
+                <div><input type="checkbox" class="two"> Two-handed</div>
+                <div><input type="checkbox" class="groups"> All groups</div>
+                <div><input type="checkbox" class="inf"> All infusions</div>
+                <a class="btn btn-dark" data-bs-toggle="collapse" 
+                    href="#multiCollapseExample1" role="button" aria-expanded="false" 
+                    aria-controls="multiCollapseExample1"><b>Infusions</b></a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div><input type="checkbox" class="normal" id="normal"> Normal</div>
+                        <div><input type="checkbox" class="raw" id="raw"> Raw</div>
+                        <div><input type="checkbox" class="fire" id="fire"> Fire</div>
+                        <div><input type="checkbox" class="magic" id="magic"> Magic</div>
+                        <div><input type="checkbox" class="lightning" id="lightning"> Lightning</div>
+                        <div><input type="checkbox" class="dark" id="dark"> Dark</div>
+                        <div><input type="checkbox" class="enchanted" id="enchanted"> Enchanted</div>
+                    </div>
+                <br>
+                <a class="btn btn-dark" data-bs-toggle="collapse" 
+                    href="#multiCollapseExample2" role="button" aria-expanded="false" 
+                    aria-controls="multiCollapseExample1"><b>Groups</b></a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div><input type="checkbox" class="Axe form-check-input" name="Axe" id="2"> Axe</div>
+                        <div><input type="checkbox" class="Bow" name="Bow" id="3"> Bow</div>
+                        <div><input type="checkbox" class="Claw" name="Claw" id="4"> Claw</div>
+                        <div><input type="checkbox" class="Crossbow" name="Crossbow" id="5"> Crossbow</div>
+                        <div><input type="checkbox" class="CurvedGreatsword" name="Curved Greatsword" id="6"> Curved Greatsword</div>
+                        <div><input type="checkbox" class="CurvedSword" name="Curved Sword" id="7"> Curved Sword</div>
+                        <div><input type="checkbox" class="Dagger" name="Dagger" id="8"> Dagger</div>
+                        <div><input type="checkbox" class="Fist" name="Fist" id="9"> Fist</div>
+                        <div><input type="checkbox" class="GreatAxe" name="Great Axe" id="10"> Great Axe</div>
+                        <div><input type="checkbox" class="GreatHammer" name="Great Hammer" id="11"> Great Hammer</div>
+                        <div><input type="checkbox" class="GreatBow" name="Great Bow" id="12"> Great Bow</div>
+                        <div><input type="checkbox" class="Greatsword" name="Greatsword" id="13"> Greatsword</div>
+                        <div><input type="checkbox" class="Halberd" name="Halberd" id="14"> Halberd</div>
+                        <div><input type="checkbox" class="Hammer" name="Hammer" id="15"> Hammer</div>
+                        <div><input type="checkbox" class="Katana" name="Katana" id="16"> Katana</div>
+                        <div><input type="checkbox" class="Lance" name="Lance" id="17"> Lance</div>
+                        <div><input type="checkbox" class="Reaper" name="Reaper" id="18"> Reaper</div>
+                        <div><input type="checkbox" class="Spear" name="Spear" id="19"> Spear</div>
+                        <div><input type="checkbox" class="StraightSword" name="Straight Sword" id="20"> Straight Sword</div>
+                        <div><input type="checkbox" class="ThrustingSword" name="Thrusting Sword" id="21"> Thrusting Sword</div>
+                        <div><input type="checkbox" class="Twinblade" name="Twinblade" id="22"> Twinblade</div>
+                        <div><input type="checkbox" class="UltraGreatsword" name="Ultra Greatsword" id="23"> Ultra Greatsword</div>
+                        <div><input type="checkbox" class="Whip" name="Whip" id="24"> Whip</div>
+                    </div>
+                <br>
+                <a class="btn btn-dark" data-bs-toggle="collapse" 
+                    href="#multiCollapseExample3" role="button" aria-expanded="false" 
+                    aria-controls="multiCollapseExample1"><b>Rings</b></a>
+                <div class="collapse multi-collapse" id="multiCollapseExample3">
+                    <div><input type="checkbox" class="ROB"> Ring of Blades +2</div>
+                    <div><input type="checkbox" class="Flynn"> Flynn's Ring</div>
+                    <div><input type="checkbox" class="LightRing"> Lightning Clutch Ring</div>
+                    <div><input type="checkbox" class="SorceryRing"> Sorcery Clutch Ring</div>
+                    <div><input type="checkbox" class="DarkRing"> Dark Clutch Ring</div>
+                    <div><input type="checkbox" class="FireRing"> Fire Clutch Ring</div>
+                </div>
+        </div>
+        <div>
+            <table class="table-striped table">
+                <thead>
+                    <tr>
+                        <th colspan="2"></th>
+                        <th colspan="6">Attack power</th>
+                        <th colspan="4">Requirements</th>
+                    </tr>
+                    <tr>
+                        <th class="bottom_text"><p>Weapon</p></th>
+                        <th class="bottom_text"><p>Infusion</p></th>
+                        <th><button class="sortTableP"><b>P</b></button></th>
+                        <th><button class="sortTableM"><b>M</b></button></th>
+                        <th><button class="sortTableF"><b>F</b></button></th>
+                        <th><button class="sortTableL"><b>L</b></button></th>
+                        <th><button class="sortTableD"><b>D</b></button></th>
+                        <th><button class="sortTableT"><b>Ttl</b></button></th>
+                        <th class="bottom_text"><p>Str</p></th>
+                        <th class="bottom_text"><p>Dex</p></th>
+                        <th class="bottom_text"><p>Int</p></th>
+                        <th class="bottom_text"><p>Fth</p></th>
+                    </tr> 
+                </thead>
+                <tbody class="generate">
+                  <tr>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+ <script src="Untitled-1.js"></script>
+ <script src="Script2.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
