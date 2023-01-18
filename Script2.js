@@ -145,14 +145,45 @@ function generateTable(sortKey) {
 		if (weapon["ReqFai"]>bfaith.value){redf = "name_warning";}
 		if (weapon["ReqInt"]>dint.value){redi = "name_warning";}
 		if (weapon["ReqStr"]>bstr.value || weapon["ReqDex"]>dstr.value || weapon["ReqFai"]>bfaith.value || weapon["ReqStr"]>bstr.value){red = "name_warning"}
-		let whole_text = "<tr>"+"<td class ="+reds+">"+"<a href = "+weapon["Url"]+" "+"target = "+"_blank"+">"+weapon["Name"]+"</a>"+"</td>"+"<td>"+weapon["Infusion"]+"</td>"+"<td>"
-			+weapon.Physical+"</td>"+"<td>"
-			+weapon.Magic+"</td>"+"<td>"
-			+weapon.Fire+"</td>"+"<td>"
-			+weapon.Light+"</td>"+"<td>"
-			+weapon.Dark+"</td>"+"<td>"
-			+weapon.Total+"</td>"+"<td class ="+reds+">"+weapon["ReqStr"]+"</td>"+"<td class ="+redd+">"+weapon["ReqDex"]+"</td>"+"<td class ="+redi+">"+weapon["ReqInt"]+"</td>"+"<td class ="+redf+">"+weapon["ReqFai"]+"</td>"+"</tr>";
-	table.innerHTML += whole_text;
+		let tr = table.appendChild(document.createElement('tr'));
+		let tr_name = tr.appendChild(document.createElement('td'));
+		let tr_name_a = tr_name.appendChild(document.createElement('a'));
+		tr_name.className = reds;
+		tr_name_a.textContent = weapon["Name"];
+		tr_name_a.href = weapon["Url"];
+		tr_name_a.target = "_blank";
+		tr.appendChild(document.createElement('td')).textContent = weapon["Infusion"];
+		tr.appendChild(document.createElement('td')).textContent = weapon.Physical;
+		tr.appendChild(document.createElement('td')).textContent = weapon.Magic;
+		tr.appendChild(document.createElement('td')).textContent = weapon.Fire;
+		tr.appendChild(document.createElement('td')).textContent = weapon.Light;
+		tr.appendChild(document.createElement('td')).textContent = weapon.Dark;
+		tr.appendChild(document.createElement('td')).textContent = weapon.Total;
+		let tr_str = tr.appendChild(document.createElement('td'));
+		let tr_dex = tr.appendChild(document.createElement('td'));
+		let tr_int = tr.appendChild(document.createElement('td'));
+		let tr_fai = tr.appendChild(document.createElement('td'));
+		tr_str.textContent = weapon["ReqStr"];
+		tr_dex.textContent = weapon["ReqDex"];
+		tr_int.textContent = weapon["ReqInt"];
+		tr_fai.textContent = weapon["ReqFai"];
+		tr_str.className = reds;
+		tr_dex.className = redd;
+		tr_int.className = redi;
+		tr_fai.className = redf;
+		// let whole_text = "<tr>"+"<td class ="+reds+">"+"<a href = "+weapon["Url"]+" "+"target = "+"_blank"+">"+weapon["Name"]+"</a>"+"</td>"+"<td>"+weapon["Infusion"]+"</td>"+"<td>"
+		// 	+weapon.Physical+"</td>"+"<td>"
+		// 	+weapon.Magic+"</td>"+"<td>"
+		// 	+weapon.Fire+"</td>"+"<td>"
+		// 	+weapon.Light+"</td>"+"<td>"
+		// 	+weapon.Dark+"</td>"+"<td>"
+		// 	+weapon.Total+"</td>"
+		// 	+"<td class ="+reds+">"+weapon["ReqStr"]+"</td>"
+		// 	+"<td class ="+redd+">"+weapon["ReqDex"]+"</td>"
+		// 	+"<td class ="+redi+">"+weapon["ReqInt"]+"</td>"
+		// 	+"<td class ="+redf+">"+weapon["ReqFai"]+"</td>"
+		// 	+"</tr>";
+		// table.innerHTML += whole_text;
 	}
 }
 sortP.addEventListener('click', sortTableP);
