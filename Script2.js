@@ -171,19 +171,6 @@ function generateTable(sortKey) {
 		tr_dex.className = redd;
 		tr_int.className = redi;
 		tr_fai.className = redf;
-		// let whole_text = "<tr>"+"<td class ="+reds+">"+"<a href = "+weapon["Url"]+" "+"target = "+"_blank"+">"+weapon["Name"]+"</a>"+"</td>"+"<td>"+weapon["Infusion"]+"</td>"+"<td>"
-		// 	+weapon.Physical+"</td>"+"<td>"
-		// 	+weapon.Magic+"</td>"+"<td>"
-		// 	+weapon.Fire+"</td>"+"<td>"
-		// 	+weapon.Light+"</td>"+"<td>"
-		// 	+weapon.Dark+"</td>"+"<td>"
-		// 	+weapon.Total+"</td>"
-		// 	+"<td class ="+reds+">"+weapon["ReqStr"]+"</td>"
-		// 	+"<td class ="+redd+">"+weapon["ReqDex"]+"</td>"
-		// 	+"<td class ="+redi+">"+weapon["ReqInt"]+"</td>"
-		// 	+"<td class ="+redf+">"+weapon["ReqFai"]+"</td>"
-		// 	+"</tr>";
-		// table.innerHTML += whole_text;
 	}
 }
 sortP.addEventListener('click', sortTableP);
