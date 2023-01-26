@@ -85,6 +85,7 @@
                     <div><input type="checkbox" class="form-check-input DarkRing"> Dark Clutch Ring</div>
                     <div><input type="checkbox" class="form-check-input FireRing"> Fire Clutch Ring</div>
                 </div>
+                <div id="paypal-donate-button-container"><div class="donate_text"><b>Donate to help</b></div></div>
         </div>
         <div>
             <table class="table-striped table">
@@ -145,7 +146,6 @@
                 </thread>
             </table>
         </div>
-        <div id="paypal-donate-button-container"><div class="donate_text"><b>Donate to help</b></div></div>
     </div>
 <script src="Untitled-1.js"></script>
 <script src="Script2.js"></script>
@@ -157,8 +157,8 @@
        image:{
             src: 'transparent.png'
        },
-       onComplete: function (params) {
-           // Your onComplete handler
+       item_number: 'Creation of dark souls 2 calculator',
+       onComplete: function (params) {    
        },
    }).render('#paypal-donate-button-container');
 

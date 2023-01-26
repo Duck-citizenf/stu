@@ -103,18 +103,22 @@ label {
 #donate-button{
     position: absolute;
     z-index: 99999;
+    width: 180px;
+    height: 42px;
 }
 .donate_text{
     position: absolute; 
     user-select: none;
+    text-align: center;
+    padding-left: 32px;
+    padding-top: 7px;
 }
 #paypal-donate-button-container{
     position: relative;
     color: #fff;
     background-color: #212529;
     height: 42px;
-    width: 126px;
+    width: 180px;
     border-radius: .25rem;
-    text-align: center;
-    padding: 7px;
+    margin-top: 20px;
 }
