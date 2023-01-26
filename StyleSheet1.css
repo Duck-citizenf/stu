@@ -100,3 +100,21 @@ label {
     box-shadow:0 0 3px #212529;
     background:#212529;
 }
+#donate-button{
+    position: absolute;
+    z-index: 99999;
+}
+.donate_text{
+    position: absolute; 
+    user-select: none;
+}
+#paypal-donate-button-container{
+    position: relative;
+    color: #fff;
+    background-color: #212529;
+    height: 42px;
+    width: 126px;
+    border-radius: .25rem;
+    text-align: center;
+    padding: 7px;
+}
