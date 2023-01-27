@@ -122,3 +122,6 @@ label {
     border-radius: .25rem;
     margin-top: 20px;
 }
+.str, .dex, .int, .faith {
+    width: 143px;
+}
